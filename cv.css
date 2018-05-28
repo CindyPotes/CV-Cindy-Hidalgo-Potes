@@ -22,8 +22,13 @@ body{
 
 .nombre{
 	font-size: 32;
-	color: #a8241a;
-	text-align: center;
+	color: white;
+}
+
+.nombre1{
+  transform: translate3d(38%, 0, 0);
+  color: #a8241a;
+  transition: all 1.5s linear 0.5s; 
 }
 
 .encabezado{
@@ -38,19 +43,34 @@ body{
 	width: 33%;
 	height: auto;
 	padding: 10px;
+	animation: 0.5 3s move linear;
+}
+
+@keyframes move {
+	0% {
+		transform: translate3d(0, 0px, 0);
+	}
+	50% {
+		transform: translate3d(0, 5%, 0);
+	}
+	100% {
+		transform: translate3d(0, 0px, 0);
+	}
 }
 
 .imagen{
 	width: 33%;
 	height: auto;
-	padding: 10px;
+	padding: 5px;
+	border: 2px dashed #a8241a;
+	border-radius: 100%;
 }
 
 img{
 	width: 100%;
 	height: 100%;
 	border-radius: 100%;
-	border: 2px dashed #a8241a;
+	
 }
 
 .perfil{
@@ -58,11 +78,39 @@ img{
 	height: auto;
 	text-align: right;
 	padding: 10px;
+	animation: 0.5 3s move linear;
+}
+
+@keyframes move {
+	0% {
+		transform: translate3d(0, 0px, 0);
+	}
+	50% {
+		transform: translate3d(0, 5%, 0);
+	}
+	100% {
+		transform: translate3d(0, 0px, 0);
+	}
 }
 
 .cuerpo{
 	display: flex;
 	max-width: 1040px;
+}
+
+.cuerpo1{
+  color: #a8241a;
+  transition: all 1.5s linear 0.5s; 
+	animation: 2s line linear;
+}
+
+@keyframes line {
+	0% {
+		transform: translate3d(-100%, 0, 0);
+	}
+	100% {
+		transform: translate3d(38%, 0, 0);
+	}
 }
 
 .izquierda{
@@ -88,3 +136,5 @@ h2{
 	text-align: right;
 	margin-bottom: 40px;
 }
+
+

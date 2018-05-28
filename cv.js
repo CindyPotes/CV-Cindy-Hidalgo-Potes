@@ -1,3 +1,14 @@
+$('img').fadeOut()
+$('.imagen').fadeOut()
+$('.cuerpo').fadeOut()
+
 $(document).ready(function() {
-  $(".nombre").animate({left: "5000px", height: "100px", width: "500px"},5000);
+  $(".nombre").addClass('nombre1')
+  $('img').fadeIn(1500)
+  $('.imagen').fadeIn(2500)
+  $('.cuerpo').fadeIn()
+});
+
+$(document).scroll(function() {
+	$(".cuerpo").addClass('cuerpo1')
 });
