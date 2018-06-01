@@ -1,6 +1,7 @@
 $('img').fadeOut()
 $('.imagen').fadeOut()
 $('.cuerpo').fadeOut()
+$('.texto').fadeOut()
 
 $(document).ready(function() {
   $(".nombre").addClass('nombre1')
@@ -10,5 +11,5 @@ $(document).ready(function() {
 });
 
 $(document).scroll(function() {
-	$(".cuerpo").addClass('cuerpo1')
+	$('.texto').fadeIn(5000)
 });
