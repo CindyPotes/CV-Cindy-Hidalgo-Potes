@@ -88,6 +88,7 @@ img{
 .cuerpo{
 	display: flex;
 	max-width: 1040px;
+	color: white
 }
 
 .izquierda{
@@ -114,4 +115,6 @@ h2{
 	margin-bottom: 40px;
 }
 
-
+.texto{
+	color: black
+}
